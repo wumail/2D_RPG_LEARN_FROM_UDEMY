@@ -1,10 +1,23 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Unity.Mathematics;
 using UnityEngine;
 
-public class Enemy : Character<EnemyStateMachine, EnemyState> {
-   
+public class Enemy : Entity<EnemyStateMachine, EnemyState>
+{
+    [Header("Enemy States")]
+    [SerializeField] protected float idleTime = 1f;
+    protected override void Awake()
+    {
+        base.Awake();
+        StateMachine = new EnemyStateMachine();
+    }
+    protected override void Start()
+    {
+        base.Start();
+    }
+    protected override void Update()
+    {
+        base.Update();
+    }
+
 }

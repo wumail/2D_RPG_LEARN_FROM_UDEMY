@@ -64,27 +64,31 @@
     <Analyzer Include="D:\unity\unity\2022.3.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\PlayerWallJump.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyState.cs" />
-    <Compile Include="Assets\Scripts\Character\Character.cs" />
-    <Compile Include="Assets\Scripts\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerFallState.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerGroundedState.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyStateMachine.cs" />
-    <Compile Include="Assets\Scripts\Character\StateMachine.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerIdle.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAnimationTrigger.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
-    <Compile Include="Assets\Scripts\Character\State.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerJump.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAirState.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerAnimationTrigger.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerWallSlide.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerAirState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\EnemyStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\Prototype\Entity.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\Skeleton_Grounded.cs" />
+    <Compile Include="Assets\Scripts\Character\Prototype\IStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\Skeleton_Idle.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerGroundedState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerWallJump.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerIdle.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\Prototype\IState.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\Skeleton_Walk.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerJump.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerDash.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerFallState.cs" />
+    <Compile Include="Assets\Scripts\Character\Enemy\Skeleton.cs" />
     <Compile Include="Assets\Scripts\ParallaxBackground.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerWallSlide.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerDash.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

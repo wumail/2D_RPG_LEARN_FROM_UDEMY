@@ -6,15 +6,9 @@ public class PlayerState: CharacterState<StateMachine<IState>>
 {
     protected Player player;
     protected IStateMachine<PlayerState> stateMachine;
-    protected Rigidbody2D Rb;
-
-    protected float stateTime;
 
     protected float xInput;
     protected float yInput;
-    private string animBoolName;
-
-    protected bool triggerCalled;
 
     public PlayerState(Player player, PlayerStateMachine stateMachine, string animBoolName)
     {
@@ -26,8 +20,8 @@ public class PlayerState: CharacterState<StateMachine<IState>>
 
     override public void Enter()
     {
+        base.Enter();
         player.Anim.SetBool(animBoolName, true);
-        triggerCalled = false;
     }
 
     override public void Update()
@@ -43,8 +37,8 @@ public class PlayerState: CharacterState<StateMachine<IState>>
         player.Anim.SetBool(animBoolName, false);
     }
 
-    public void AnimationTrigger()
+    public override void AnimationTrigger()
     {
-        triggerCalled = true;
+        base.AnimationTrigger();
     }
 }

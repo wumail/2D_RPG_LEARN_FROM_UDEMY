@@ -12,15 +12,15 @@ public class PlayerDash : PlayerState
     public override void Enter()
     {
         base.Enter();
-        stateTime = player.dashDuration;
+        stateTimer = player.dashDuration;
     }
 
     public override void Update()
     {
         base.Update();
-        stateTime -= Time.deltaTime;
+        stateTimer -= Time.deltaTime;
         player.SetVelocity(player.dashDir * player.dashSpeed, 0);
-        if (stateTime <= 0)
+        if (stateTimer <= 0)
         {
             stateMachine.ChangeState(player.IdleState);
         }
